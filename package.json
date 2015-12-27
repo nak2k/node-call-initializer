@@ -1,0 +1,33 @@
+{
+  "name": "call-initializer",
+  "version": "0.0.1",
+  "description": "Call initializers",
+  "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/nak2k/node-call-initializer/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13",
+    "tape": "^4.4.0"
+  },
+  "homepage": "https://github.com/nak2k/node-call-initializer",
+  "keywords": [],
+  "license": "MIT",
+  "main": "lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nak2k/node-call-initializer.git"
+  },
+  "scripts": {
+    "build": "babel --presets es2015 -d lib/ src/",
+    "prepublish": "npm run build",
+    "pretest": "npm run build",
+    "test": "tape test/*"
+  },
+  "files": [
+    "README.md",
+    "lib/"
+  ]
+}
